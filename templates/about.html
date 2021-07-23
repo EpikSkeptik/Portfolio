@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pcontainer">
+    <link rel="preload" as="image" href="{{url_for('static', filename='/img/workshop.png')}}"/>
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                About Me
+            </span>
+        </div>
+    </div>
+
+    <section class="section-dark">
+        <p>Hello! I am no one trying to become someone.</p>
+        <p>I'm currently on my path to become a software developer.</p>
+        <p>I am interested in video editing, digital painting, playing music and learning new things.</p>
+    </section>
+
+    <div class="poverlay"></div>
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="border">
+                My Skills
+            </span>
+        </div>
+    </div>
+
+    <section class="section-dark">
+        <p>Comfortable with: Python, HTML, CSS, AutoCAD Inventor, Arduino</p>
+        <p>Familiar with: Javascript, C++, STM 32, Java, node.js</p>
+        <p>Currently Learning: REACT and Vue.js</p>
+    </section>
+
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border">
+                Message to the World
+            </span>
+        </div>
+    </div>
+
+    <section class="section-dark">
+        <h3>Dear World,</h3>
+        <p>I hope I can find my place in the world working on awesome things,</p>
+        <p>to help contribute towards a better future. That's all I'm hoping for.</p>
+        <p>Hopefully, I will get there. </p>
+    </section>
+</div>
+
+{% endblock content %}

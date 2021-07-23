@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Soosh | Eat Now!</title>
+        <meta name="description" content="Soosh Sushi Restaurant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+        <script src="{{url_for('static', filename='/js/index.js')}}"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Soosh</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ordernow">Order Now!</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="cover">
+            <div class="cover-text">
+                <h1>Soosh</h1>
+                <h3>Where passion lies</h3>
+                <p>You've never seen sushi done like this before.</p>
+            </div>
+        </div>
+
+        <section class="section-dark">
+        </section>
+
+        <div class="cover1"></div>
+
+        
+        <section id="menu" class="section-light">
+                <h2>Menu</h2>
+                <h3>Classic Rolls</h3>
+                    <ul class="classic-rolls">
+                        <li>California Roll</li>
+                        <li>Green Dragon Roll</li>
+                        <li>Red Dragon Roll</li>
+                        <li>Spicy Salmon Roll</li>
+                    </ul>
+                <h3>Hand Rolls</h3>
+                    <ul class="handrolls">
+                        <li>Tuna Handroll</li>
+                        <li>Salmon Handroll</li>
+                    </ul>
+                <h3>Sashimi</h3>
+                <ul class="sashimi">
+                    <li>Tuna Sashimi</li>
+                    <li>Salmon Sashimi</li>
+                    <li>Surf Clam</li>
+                </ul>
+
+                <div class="grid">
+                    <div class="grid-item"><img src="{{url_for('static', filename='/img/soosh/dish1.jpg')}}" alt="dish1"></div>
+                    <div class="grid-item"><img src="{{url_for('static', filename='/img/soosh/dish2.jpg')}}" alt="dish2"></div>
+                    <div class="grid-item"><img src="{{url_for('static', filename='/img/soosh/dish3.jpg')}}" alt="dish3"></div>
+                </div>
+        </section>
+
+        <div class="cover2"></div>
+
+        <section id="location" class="section-dark">
+            <div class="section-dark-text">
+                <h3>Location</h3>
+                <p>123 Sushi Ave, Toronto ON, Canada</p>
+            
+                <div id="map"></div>
+                <h3>Hours</h3>
+                <p>
+                    Mon-Fri 5:00pm -10:00pm
+                    </p>
+                    <p>Sat 3:00pm - 11:00pm</p>
+                <p>Sun 6:00pm - 9:00pm</p>
+            </div>
+        </section>
+
+
+        <div class="cover2"></div>
+
+        <section id="about" class="section-light">
+            <div class="section-light-text">
+                <h2>About</h2>
+                <p>An imaginary, mystical place where sushi is an artform. It started out as a pop up food truck reimagining the way sushi is served and created, now has a store located in the iconic 123 Sushi Ave. We'd love to show you our craft come join us.</p>
+            </div>
+
+            <button id="ordernow">Order Now!</button>
+        </section>
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+    </body>
+
+</html>

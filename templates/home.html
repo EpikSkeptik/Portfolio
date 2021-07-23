@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <div class="overlay"></div>
+        <video src="{{url_for('static', filename='video/UnderwaterBubbles.mp4')}}" muted loop autoplay ></video>
+
+        <div class="text">
+            <h2>Hello!</h2>
+            <p>I'm Jessa Mae Alcantara, I'm no one trying to become somebody.</p>
+            <p>I'm a Mechatronics graduate looking for a software developer job.</p>
+            <a href="/projects">Explore Projects</a>
+        </div>
+
+{% endblock content %}

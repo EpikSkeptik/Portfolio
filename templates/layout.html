@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width" initial-scale="1.0">
+
+    {% if title %}
+        <title>Jessa Mae Alcantara | {{title}}</title>
+    {% else %}
+        <title>Jessa Mae Alcantara </title>
+    {% endif %}
+
+    <link rel="shortcut icon" type="image/jpg" href="{{url_for('static', filename='img/duck.png')}}" />
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}" />
+
+</head>
+<body>
+    <section class="showcase">
+       <header>
+            <img class="logo" src="{{url_for('static', filename='img/duck.png')}}" alt="Jellofish Studios" width="30" height="30">
+            <div class="toggle"></div>
+       </header>
+    {% block content %}{% endblock %}
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="../static/resume.pdf">Resume</a></li>
+        </ul>
+    </div>
+
+    <script src="{{url_for('static', filename='/js/home.js')}}"></script>
+
+</body>
+</html>
