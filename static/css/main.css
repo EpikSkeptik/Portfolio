@@ -160,7 +160,7 @@ header {
     min-height: 100vh;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7{
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8{
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -213,8 +213,17 @@ header {
     width: 98.8vw;
 }
 
+.pimg8 {
+    background-image:url('../img/Splitter.PNG');
+    min-height: 600px;
+    width: 98.8vw;
+}
+
 .section-dark {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 98.5vw;
     text-align: center;
     padding: 50px 80px;
@@ -224,6 +233,10 @@ header {
     line-height: 30px;
     justify-content: center;
     z-index: 100;
+}
+
+.section-dark p {
+    max-width: 60vw;
 }
 
 h2 {
@@ -256,7 +269,7 @@ h2 {
     z-index: -10;
 }
 
-#soosh {
+.preview {
     background-color: #fff;
     border: none;
     color: #111;
@@ -269,10 +282,35 @@ h2 {
     cursor: pointer;
 }
 
-#soosh:hover {
+.preview:hover {
     background-color:rgba(117, 117, 117, 0.5);
     color: #111;
     transition: 0.5s;
+}
+
+.github-repo {
+    background-color: #fff;
+    border: none;
+    color: #111;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.github-repo:hover {
+    background-color:rgba(117, 117, 117, 0.5);
+    color: #111;
+    transition: 0.5s;
+}
+
+.btn-container {
+    display: flex
+    justify-content: center;
+    align-items: baseline;
 }
 
 @media (max-width: 798px) {
